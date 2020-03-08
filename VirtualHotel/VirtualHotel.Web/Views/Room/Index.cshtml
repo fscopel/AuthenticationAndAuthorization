@@ -1,0 +1,10 @@
+﻿@model System.Security.Claims.ClaimsPrincipal
+@{
+    ViewData["Title"] = "Rooms";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to the Rooms</h1>
+        <p>Guest Name: @Model.Identity.Name </p>
+        <p>Room Number: @Model.Claims.FirstOrDefault(o=> o.Type == "RoomNumber").Value </p>
+    </div>
