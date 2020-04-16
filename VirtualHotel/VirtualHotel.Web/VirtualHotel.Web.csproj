@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\VirtualHotel.Data\VirtualHotel.Data.csproj" />
+    <ProjectReference Include="..\VirtualHotel.Data\VirtualHotel.Data.csproj" />
   </ItemGroup>
 
 
